@@ -35,8 +35,6 @@ Module Module1
 
         Dim f As New Process
         If IsPowerShell = True Then
-            'Shell($"powershell.exe -ExecutionPolicy Bypass -File ""{FinalPath}"" -Arguments ""{Final.ToString}""")
-
             Dim x As New Process
             x.StartInfo.FileName = "powershell.exe"
             x.StartInfo.Arguments = $"-ExecutionPolicy Bypass -Command ""& '{FinalPath}' {Final.ToString}"""
@@ -45,8 +43,6 @@ Module Module1
             x.Start()
             x.WaitForExit()
         Else
-            'Shell($"{FinalPath} {Final.ToString}")
-
             Dim x As New Process
             x.StartInfo.FileName = FinalPath
             x.StartInfo.Arguments = Final.ToString()
