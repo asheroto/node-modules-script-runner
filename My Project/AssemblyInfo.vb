@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("fuk")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("No more dealing with npm symlinks! Automatically run the right program in respect to the working directory!")>
+<Assembly: AssemblyCompany("asheroto")>
 <Assembly: AssemblyProduct("fuk")>
 <Assembly: AssemblyCopyright("")>
 <Assembly: AssemblyTrademark("")>
